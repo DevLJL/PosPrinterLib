@@ -35,7 +35,7 @@ type
     class function Make: IPosPrinterLib;
 
     function Param: TPosPrinterLibParam;
-    function PrintText(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
+    function PrintContent(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
     function LoadPorts(AStrings: TStrings): IPosPrinterLib;
   end;
 
@@ -211,7 +211,7 @@ begin
   Result := FParam;
 end;
 
-function TPosPrinterLibACBr.PrintText(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
+function TPosPrinterLibACBr.PrintContent(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
 var
   lCanvasFile: TextFile;
   lI: Integer;

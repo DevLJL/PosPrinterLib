@@ -11,7 +11,7 @@ type
     ['{DB65EC2F-6908-4DAA-93D0-443E6CACDA67}']
 
     function Param: TPosPrinterLibParam;
-    function PrintText(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
+    function PrintContent(AContent: TStringList; ACopies: SmallInt): IPosPrinterLib;
     function LoadPorts(AStrings: TStrings): IPosPrinterLib;
   end;
 
